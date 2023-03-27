@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
+
 
 void main()
 {
@@ -15,10 +15,14 @@ void main()
 		scanf("%i",p+i);
 	}
 	
-	search(p, n);
-	cube(p, n, i);
+	t=search(p, n);
+	cube(p, n, t);
+	for(i=0;i<n;i++)
+	{
+		printf("%i",*(p+i));
+	}
 }
-void search(int *p, int n)
+int search(int *p, int n)
 {
 	int i,k;
 	printf("Enter element to be searched : ");
@@ -27,16 +31,16 @@ void search(int *p, int n)
 	{
 		if (*(p+i)==k)
 		{
-			printf("%i\n",i);
 			
+			return i;
 		}
 	}
-	return i;
+	
 	
 }
 void cube(int *p, int n, int i)
 {	
 	*(p+i)=(*(p+i))*(*(p+i))*(*(p+i));
-	printf("%i",*(p+i));
+	
 	
 }
