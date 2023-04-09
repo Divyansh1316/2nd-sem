@@ -1,4 +1,4 @@
-/* 5. WAP to input a string="Aman singh rawat" and print asr as output. */
+/* 5. WAP to input a string="Aman singh rawat" and print ASRawat as output. */
 
 #include<stdio.h>
 #include<string.h>
