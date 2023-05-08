@@ -22,17 +22,17 @@ void func1(struct emp *p)
 	{
 		if((p+i)->hours>=8 && (p+i)->hours<10)
 		{
-			(p+i)->salay=(p+i)->salary+50;
+			(p+i)->salary=(p+i)->salary+50;
 			printf("%s : %d\n",(p+i)->name,(p+i)->salary);
 		}
 		else if((p+i)->hours>=10 && (p+i)->hours<12)
 		{
-			(p+i)->salay=(p+i)->salary+100;
+			(p+i)->salary=(p+i)->salary+100;
 			printf("%s : %d\n",(p+i)->name,(p+i)->salary);
 		}
 		else if((p+i)->hours>=12)
 		{
-			(p+i)->salay=(p+i)->salary+150;
+			(p+i)->salary=(p+i)->salary+150;
 			printf("%s : %d\n",(p+i)->name,(p+i)->salary);
 		}
 	}
