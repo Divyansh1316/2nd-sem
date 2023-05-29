@@ -15,10 +15,10 @@ if day<=5:
     fine=0.50*day
     print("Total fine is : Rs",fine)
 elif (day>=6 and day<=10):
-    fine=1*day
+    fine=2.5+1*(day-5)
     print("Total fine is : Rs",fine)
 elif (day>10 and day<=30):
-    fine=5*day
+    fine=2.5+5+5*(day-10)
     print("Total fine is : Rs",fine)
 else:
     print("Membership cancelled")
